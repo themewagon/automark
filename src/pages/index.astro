@@ -16,6 +16,7 @@ import LeadGeneration from "@/layouts/components/LeadGeneration.astro";
 import config from "@/config/config.json";
 import { getListPage } from "@/lib/contentParser.astro";
 import { markdownify } from "@/lib/utils/textConverter";
+import { withBase } from "@/lib/utils/url";
 import Testimonial from "@/partials/Testimonial.astro";
 import Features from "@/partials/Features.astro";
 import type { Homepage } from "@/types";
@@ -45,14 +46,14 @@ const { checklist_form_action } = config.params;
             <a
               class="btn btn-primary"
               rel="noopener noreferrer"
-              href={homepageData.banner.button_primary.link}
+              href={withBase(homepageData.banner.button_primary.link)}
             >
               {homepageData.banner.button_primary.label}
             </a>
             <a
               class="btn btn-outline"
               rel="noopener noreferrer"
-              href={homepageData.banner.button_secondary.link}
+              href={withBase(homepageData.banner.button_secondary.link)}
             >
               {homepageData.banner.button_secondary.label}
             </a>
@@ -473,7 +474,7 @@ const { checklist_form_action } = config.params;
               {homepageData.growth_process.button.enable && (
                 <div class="flex justify-center mt-10 xl:mt-18">
                   <a
-                    href={homepageData.growth_process.button.link}
+                    href={withBase(homepageData.growth_process.button.link)}
                     class="btn btn-primary"
                   >
                     {homepageData.growth_process.button.label}

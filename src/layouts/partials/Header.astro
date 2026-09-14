@@ -2,6 +2,7 @@
 import Logo from "@/components/Logo.astro";
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";
+import { withBase } from "@/lib/utils/url";
 
 export interface ChildNavigationLink {
   name: string;
@@ -88,7 +89,7 @@ const { pathname } = Astro.url;
                   {menu.children?.map((child) => (
                     <li class="nav-dropdown-item">
                       <a
-                        href={child.url}
+                        href={withBase(child.url)}
                         aria-label={child.name}
                         class={`nav-dropdown-link block ${
                           (pathname === `${child.url}/` ||
@@ -105,7 +106,7 @@ const { pathname } = Astro.url;
             ) : (
               <li class="nav-item">
                 <a
-                  href={menu.url}
+                  href={withBase(menu.url)}
                   class={`nav-link block ${
                     (pathname === `${menu.url}/` || pathname === menu.url) &&
                     "active"

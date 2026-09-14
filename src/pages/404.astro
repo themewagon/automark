@@ -1,5 +1,6 @@
 ---
 import Base from "@/layouts/Base.astro";
+import { withBase } from "@/lib/utils/url";
 ---
 
 <Base title="Page Not Found">
@@ -21,7 +22,7 @@ import Base from "@/layouts/Base.astro";
               changed, or is temporarily unavailable.
             </p>
           </div>
-          <a href="/" class="btn btn-primary mt-8">Back to home</a>
+          <a href={withBase("/")} class="btn btn-primary mt-8">Back to home</a>
         </div>
       </div>
     </div>

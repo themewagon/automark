@@ -13,10 +13,7 @@ const { lead_generation } = Astro.props;
   <div class="container-sm">
     <div class="section-container pb-20">
       <div class="section-intro centralize">
-        <h2
-          class="title hasHighlight  "
-          set:html={lead_generation.title}
-        />
+        <h2 class="title hasHighlight" set:html={lead_generation.title} />
       </div>
       <div class="section-content">
         <div class="flex flex-col-reverse lg:flex-row gap-x-20 gap-y-10">
@@ -29,13 +26,17 @@ const { lead_generation } = Astro.props;
               set:html={markdownify(lead_generation.content, true)}
             />
             <ul class="green-tick-list [&>li]:mb-8 mt-10">
-              {lead_generation.list.map((item: string) => (
-                <li set:html={markdownify(item)} />
-              ))}
+              {
+                lead_generation.list.map((item: string) => (
+                  <li set:html={markdownify(item)} />
+                ))
+              }
             </ul>
           </div>
           <div class="lg:w-6/12">
-            <div class="bg-light rounded-4xl corner-squircle p-10 xl:px-7.5 xl:py-10">
+            <div
+              class="bg-light rounded-4xl corner-squircle p-10 xl:px-7.5 xl:py-10"
+            >
               <ImageMod
                 src={lead_generation.image}
                 width={307}
@@ -65,7 +66,9 @@ const { lead_generation } = Astro.props;
                     class="btn btn-primary w-full disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     <span id="lead-submit-label">Get Free Checklist</span>
-                    <span id="lead-submit-loading" class="hidden">Submitting...</span>
+                    <span id="lead-submit-loading" class="hidden"
+                      >Submitting...</span
+                    >
                   </button>
                   <div
                     id="lead-form-success"
@@ -77,7 +80,9 @@ const { lead_generation } = Astro.props;
                     id="lead-form-error"
                     class="hidden mt-4 text-red-500 font-medium text-sm text-center"
                   >
-                    ⚠️ <span id="lead-form-error-text">Something went wrong.</span>
+                    ⚠️ <span id="lead-form-error-text"
+                      >Something went wrong.</span
+                    >
                   </div>
                 </div>
               </form>
@@ -87,12 +92,19 @@ const { lead_generation } = Astro.props;
       </div>
     </div>
   </div>
-  <hr class="h-px bg-linear-to-r from-transparent from-10% via-white/50 to-90% to-transparent border-0" />
+  <hr
+    class="h-px bg-linear-to-r from-transparent from-10% via-white/50 to-90% to-transparent border-0"
+  />
 </section>
 
 <script>
+  import { withBase } from "@/lib/utils/url";
+
+  const isStaticDemo = import.meta.env.PUBLIC_STATIC_DEMO === "true";
   const form = document.getElementById("lead-form") as HTMLFormElement | null;
-  const submitBtn = document.getElementById("lead-submit") as HTMLButtonElement | null;
+  const submitBtn = document.getElementById(
+    "lead-submit",
+  ) as HTMLButtonElement | null;
   const submitLabel = document.getElementById("lead-submit-label");
   const submitLoading = document.getElementById("lead-submit-loading");
   const successEl = document.getElementById("lead-form-success");
@@ -125,11 +137,18 @@ const { lead_generation } = Astro.props;
     successEl?.classList.add("hidden");
     errorEl?.classList.add("hidden");
 
+    if (isStaticDemo) {
+      showError(
+        "Form submission is disabled in this static preview. Configure the GoHighLevel API routes after downloading the template.",
+      );
+      return;
+    }
+
     const formData = new FormData(form);
     setLoading(true);
 
     try {
-      const res = await fetch("/api/lead", {
+      const res = await fetch(withBase("/api/lead")!, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

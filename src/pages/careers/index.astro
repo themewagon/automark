@@ -8,6 +8,7 @@ import ImageMod from "@/layouts/components/ImageMod.astro";
 import ValueCard from "@/layouts/components/ValueCard.astro";
 import { getListPage, getSinglePage } from "@/lib/contentParser.astro";
 import { markdownify } from "@/lib/utils/textConverter";
+import { withBase } from "@/lib/utils/url";
 import type { Careers } from "@/types";
 
 // Page-level content from content collection
@@ -181,7 +182,7 @@ const jobs = await getSinglePage("careers");
                     description={job.data.description ?? ""}
                     type={job.data.type ?? "Full time"}
                     location={job.data.location ?? "Remote"}
-                    href={`/careers/${job.id}`}
+                    href={withBase(`/careers/${job.id}`)}
                   />
                 ))}
               </div>

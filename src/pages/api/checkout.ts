@@ -2,7 +2,7 @@ import type { APIRoute } from "astro";
 import Stripe from "stripe";
 
 // This route is server-rendered (Vercel Serverless Function)
-export const prerender = false;
+export const prerender = import.meta.env.GITHUB_PAGES === "true";
 
 interface GHLContactPayload {
   locationId: string;
@@ -21,12 +21,12 @@ export const POST: APIRoute = async ({ request, url }) => {
     console.error("Missing STRIPE_SECRET_KEY env var");
     return new Response(
       JSON.stringify({ success: false, error: "Stripe configuration error" }),
-      { status: 500, headers: { "Content-Type": "application/json" } }
+      { status: 500, headers: { "Content-Type": "application/json" } },
     );
   }
 
   const stripe = new Stripe(STRIPE_SECRET_KEY, {
-    apiVersion: "2026-03-25.dahlia", // Matching latest SDK typings
+    apiVersion: "2026-06-24.dahlia",
   });
 
   // Parse incoming request
@@ -46,14 +46,14 @@ export const POST: APIRoute = async ({ request, url }) => {
   } catch (e) {
     return new Response(
       JSON.stringify({ success: false, error: "Invalid JSON body" }),
-      { status: 400, headers: { "Content-Type": "application/json" } }
+      { status: 400, headers: { "Content-Type": "application/json" } },
     );
   }
 
   if (!name || !email) {
     return new Response(
       JSON.stringify({ success: false, error: "Name and email are required" }),
-      { status: 400, headers: { "Content-Type": "application/json" } }
+      { status: 400, headers: { "Content-Type": "application/json" } },
     );
   }
 
@@ -72,18 +72,15 @@ export const POST: APIRoute = async ({ request, url }) => {
     };
 
     try {
-      await fetch(
-        "https://services.leadconnectorhq.com/contacts/upsert",
-        {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${GHL_API_KEY}`,
-            "Content-Type": "application/json",
-            Version: "2021-07-28",
-          },
-          body: JSON.stringify(payload),
-        }
-      );
+      await fetch("https://services.leadconnectorhq.com/contacts/upsert", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${GHL_API_KEY}`,
+          "Content-Type": "application/json",
+          Version: "2021-07-28",
+        },
+        body: JSON.stringify(payload),
+      });
       console.log("GHL contact initiated for checkout");
     } catch (err) {
       console.error("GHL integration error during checkout:", err);
@@ -118,15 +115,15 @@ export const POST: APIRoute = async ({ request, url }) => {
       cancel_url: `${url.origin}/pricing?canceled=true`,
     });
 
-    return new Response(
-      JSON.stringify({ success: true, url: session.url }),
-      { status: 200, headers: { "Content-Type": "application/json" } }
-    );
+    return new Response(JSON.stringify({ success: true, url: session.url }), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
   } catch (err: any) {
     console.error("Stripe Checkout error:", err);
     return new Response(
       JSON.stringify({ success: false, error: err.message }),
-      { status: 500, headers: { "Content-Type": "application/json" } }
+      { status: 500, headers: { "Content-Type": "application/json" } },
     );
   }
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import { withBase } from "@/lib/utils/url";
 
 const Button = ({
   label,
@@ -13,7 +14,7 @@ const Button = ({
 }) => {
   return (
     <a
-      href={link}
+      href={withBase(link)}
       target={link.startsWith("http") ? "_blank" : "_self"}
       rel={`noopener noreferrer ${
         rel ? (rel === "follow" ? "" : rel) : "nofollow"

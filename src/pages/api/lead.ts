@@ -1,7 +1,7 @@
 import type { APIRoute } from "astro";
 
 // This route is server-rendered (Vercel Serverless Function)
-export const prerender = false;
+export const prerender = import.meta.env.GITHUB_PAGES === "true";
 
 interface GHLContactPayload {
   locationId: string;

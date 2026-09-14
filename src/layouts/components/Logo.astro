@@ -1,6 +1,7 @@
 ---
 import config from "@/config/config.json";
 import ImageMod from "./ImageMod.astro";
+import { withBase } from "@/lib/utils/url";
 
 const { src }: { src?: string } = Astro.props;
 const {
@@ -18,7 +19,7 @@ const {
 } = config.site;
 ---
 
-<a href="/" class="navbar-brand inline-block">
+<a href={withBase("/")} class="navbar-brand inline-block">
   {
     src || logo ? (
       <>

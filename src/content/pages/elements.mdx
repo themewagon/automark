@@ -6,6 +6,8 @@ image: ""
 draft: false
 ---
 
+import { withBase } from "@/lib/utils/url";
+
 # Heading 1
 
 ## Heading 2
@@ -229,7 +231,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 ### Image
 
-![image](/images/og-image.png)
+<img src={withBase("/images/og-image.png")} alt="image" />
 
 ---
 

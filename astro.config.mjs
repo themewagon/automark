@@ -12,6 +12,12 @@ import sharp from "sharp";
 import config from "./src/config/config.json";
 import theme from "./src/config/theme.json";
 
+const isGitHubPages = process.env.GITHUB_PAGES === "true";
+const site = isGitHubPages
+  ? "https://themewagon.github.io"
+  : config.site.base_url || "http://examplesite.com";
+const base = isGitHubPages ? "/automark" : config.site.base_path || "/automark";
+
 // Helper to parse font string format: "FontName:wght@400;500;600;700"
 function parseFontString(fontStr) {
   const [name, weightPart] = fontStr.split(":");
@@ -50,9 +56,10 @@ const fontsConfig = Object.entries(theme.fonts.font_family)
 
 // https://astro.build/config
 export default defineConfig({
-  adapter: vercel(),
-  site: config.site.base_url ? config.site.base_url : "http://examplesite.com",
-  base: config.site.base_path ? config.site.base_path : "/",
+  adapter: isGitHubPages ? undefined : vercel(),
+  output: "static",
+  site,
+  base,
   trailingSlash: config.site.trailing_slash ? "always" : "never",
   image: { service: sharp(), dangerouslyProcessSVG: true },
   vite: { plugins: [tailwindcss()] },

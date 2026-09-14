@@ -1,5 +1,6 @@
 ---
 import ImageMod from "@/layouts/components/ImageMod.astro";
+import { withBase } from "@/lib/utils/url";
 interface Props {
   tag: string;
   title: string;
@@ -31,7 +32,7 @@ const {
     {tag}
   </div>
 
-  <a href={href}>
+  <a href={withBase(href)}>
     <h2 class="mb-4 text-h4-sm md:text-h4 leading-[1.2] text-white">
       {title}
     </h2>

@@ -11,6 +11,7 @@ import ImageMod from "@/layouts/components/ImageMod.astro";
 import ShowcaseCard from "@/layouts/components/ShowcaseCard.astro";
 import { getListPage } from "@/lib/contentParser.astro";
 import { markdownify } from "@/lib/utils/textConverter";
+import { withBase } from "@/lib/utils/url";
 import type { Features } from "@/types";
 
 const features = await getListPage("features", "-index");
@@ -38,12 +39,12 @@ const featuresData: Features = features.data;
           <div class="flex gap-4 justify-center items-center flex-wrap">
             <a
               class="btn btn-primary"
-              href={featuresData.banner.button_primary.link}
+              href={withBase(featuresData.banner.button_primary.link)}
               >{featuresData.banner.button_primary.label}</a
             >
             <a
               class="btn btn-outline"
-              href={featuresData.banner.button_secondary.link}
+              href={withBase(featuresData.banner.button_secondary.link)}
               >{featuresData.banner.button_secondary.label}</a
             >
           </div>

@@ -4,6 +4,7 @@ import CallToAction from "@/layouts/components/CallToAction.astro";
 import ImageMod from "@/layouts/components/ImageMod.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { markdownify } from "@/lib/utils/textConverter";
+import { withBase } from "@/lib/utils/url";
 
 export async function getStaticPaths() {
   const caseStudies = await getSinglePage("caseStudy");
@@ -226,7 +227,9 @@ const studyData = study.data;
   <!-- Back to Case Studies link -->
   <section class="section-sm">
     <div class="container text-center">
-      <a href="/case-study" class="btn btn-outline"> ← Back to Case Studies </a>
+      <a href={withBase("/case-study")} class="btn btn-outline">
+        ← Back to Case Studies
+      </a>
     </div>
   </section>
 

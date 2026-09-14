@@ -6,6 +6,7 @@ import social from "@/config/social.json";
 import ImageMod from "@/layouts/components/ImageMod.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import type { Menu, SocialType } from "@/types";
+import { withBase } from "@/lib/utils/url";
 
 const {
   footer_primary,
@@ -47,7 +48,7 @@ const { main: socialLinks } = social as SocialType;
           {
             footer_primary?.map((item) => (
               <li class="mb-5">
-                <a href={item.url} class="footer-link">
+                <a href={withBase(item.url)} class="footer-link">
                   {item.name}
                 </a>
               </li>
@@ -62,7 +63,7 @@ const { main: socialLinks } = social as SocialType;
           {
             footer_resource?.map((item) => (
               <li class="mb-5">
-                <a href={item.url} class="footer-link">
+                <a href={withBase(item.url)} class="footer-link">
                   {item.name}
                 </a>
               </li>
@@ -77,7 +78,7 @@ const { main: socialLinks } = social as SocialType;
           {
             footer_legal?.map((item) => (
               <li class="mb-5">
-                <a href={item.url} class="footer-link">
+                <a href={withBase(item.url)} class="footer-link">
                   {item.name}
                 </a>
               </li>

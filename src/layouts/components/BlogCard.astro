@@ -1,5 +1,6 @@
 ---
 import ImageMod from "@/layouts/components/ImageMod.astro";
+import { withBase } from "@/lib/utils/url";
 interface Props {
   image: string;
   imageAlt: string;
@@ -36,7 +37,7 @@ const {
     class={`rounded-2xl overflow-hidden bg-text-light/5 p-6 h-full flex flex-col justify-between ${cardClass}`}
   >
     <div>
-      <a href={href} class="hover:text-primary! hover:underline">
+      <a href={withBase(href)} class="hover:text-primary! hover:underline">
         <h3 class="mb-3 text-h5-sm text-white">{title}</h3>
       </a>
       <p class="mb-5 text-sm leading-6 text-text">{description}</p>
