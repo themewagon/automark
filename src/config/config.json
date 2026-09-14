@@ -17,7 +17,7 @@
     "contact_form_action": "#",
     "checklist_form_action": "#",
     "apply_form_action": "#",
-    "copyright": "Copyright &copy; 2026 <strong><a target=\"_blank\" href=\"https://themefisher.com/\">Themefisher</a></strong> All Rights Reserved",
+    "copyright": "Copyright &copy; 2026 <strong><a target=\"_blank\" href=\"https://themefisher.com/\">Themefisher</a></strong> All Rights Reserved &bull; Distributed by <strong><a target=\"_blank\" href=\"https://themewagon.com/\">ThemeWagon</a></strong>",
     "footer_tagline": "Empowering Marketing businesses through intelligent automation.",
     "footer_email": "contact@Automark.com",
     "footer_phone": "(+1) 165-320-0102"
@@ -25,7 +25,7 @@
   "navigation_button": {
     "enable": true,
     "label": "Get This Template",
-    "link": "https://themefisher.com/products/automark-astro?aff=automarkdemo"
+    "link": "https://themefisher.com/products/automark-astro?aff=utm_source=themewagon&utm_medium=automark-template&utm_campaign=theme-download"
   },
   "google_tag_manager": {
     "enable": false,
