@@ -16,7 +16,7 @@ banner:
     enable: true
     label: "Book a Demo"
     link: "/contact"
-  image: "/images/automark_dashboard.png"
+  image: "/automark/images/automark_dashboard.png"
 
 partners:
   enable: true
@@ -29,30 +29,30 @@ smart_platform:
   cards:
     - title: "Automated Customer Follow-Up"
       subtitle: "Never lose a lead again. Respond to inquiries instantly and automatically."
-      image: "/images/features/automated-marketing-visual.svg"
+      image: "/automark/images/features/automated-marketing-visual.svg"
       classNames: ""
     - title: "Autopilot Review Generator"
       subtitle: "Automatically request and track 5-star Google reviews from happy clients."
-      image: "/images/features/ai-powered-graph.svg"
+      image: "/automark/images/features/ai-powered-graph.svg"
       classNames: ""
     - title: "Missed Call Auto-Responder"
       subtitle: "Turn missed calls into booked appointments with instant automated text messages."
-      image: "/images/features/grow-your-earnings.svg"
+      image: "/automark/images/features/grow-your-earnings.svg"
       classNames: ""
     - title: "Unified Lead Inbox"
       subtitle: "Manage all your SMS, email, Facebook, and Instagram messages in one single dashboard."
-      image: "/images/features/turnover-table.svg"
+      image: "/automark/images/features/turnover-table.svg"
       classNames: "md:col-span-2 lg:col-span-2"
     - title: "24/7 Appointment Scheduler"
       subtitle: "Let customers book directly on your calendar, completely eliminating back-and-forth emails."
-      image: "/images/features/marketing-autopilot.svg"
+      image: "/automark/images/features/marketing-autopilot.svg"
       classNames: ""
 
 service_features:
   enable: true
   items:
     - title: "Built specifically to grow <strong>your local business</strong>"
-      image: "/images/features/service-feature-1.svg"
+      image: "/automark/images/features/service-feature-1.svg"
       reverse: false
       items:
         - icon: FaBolt
@@ -69,7 +69,7 @@ service_features:
           content: "Replace your CRM, website builder, calendar, and email marketing software."
 
     - title: "The only software you need to <strong>scale predictably</strong>"
-      image: "/images/features/service-feature-2.svg"
+      image: "/automark/images/features/service-feature-2.svg"
       reverse: true
       items:
         - icon: FaChartSimple

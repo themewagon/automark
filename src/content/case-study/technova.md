@@ -5,11 +5,11 @@ description: "How TechNova Dental used our automation platform to triple their p
 date: 2024-02-15
 draft: false
 
-image: "/images/case-study-hero-2.png"
-thumbnail: "/images/case-study-hero-2.png"
+image: "/automark/images/case-study-hero-2.png"
+thumbnail: "/automark/images/case-study-hero-2.png"
 
 badge: "Healthcare"
-logo: "/images/brands/dropbox-logo-svg-150px.svg"
+logo: "/automark/images/brands/dropbox-logo-svg-150px.svg"
 company: "TechNova Dental"
 
 stats:
@@ -19,21 +19,21 @@ stats:
     label: "Less no-shows"
 
 client_info:
-  - icon: "/images/icons/careerdevelopment.svg"
+  - icon: "/automark/images/icons/careerdevelopment.svg"
     label: "Client"
     value: "TechNova Dental"
-  - icon: "/images/icons/healthicon.svg"
+  - icon: "/automark/images/icons/healthicon.svg"
     label: "Industry"
     value: "Healthcare"
-  - icon: "/images/icons/paidtimeoff.svg"
+  - icon: "/automark/images/icons/paidtimeoff.svg"
     label: "Service"
     value: "Patient Automation"
-  - icon: "/images/icons/wellbeing.svg"
+  - icon: "/automark/images/icons/wellbeing.svg"
     label: "Date"
     value: "15 Feb 2024"
 
 overview:
-  image: "/images/case-study-overview.png"
+  image: "/automark/images/case-study-overview.png"
   title: "Overview"
   content: |
     TechNova Dental is a fast-growing local practice that wanted to increase their patient volume.
@@ -52,10 +52,10 @@ challenges:
   quote_author:
     name: "Marcus Chen"
     designation: "Practice Manager"
-    avatar: "/images/avatar.png"
+    avatar: "/automark/images/avatar.png"
 
 solution:
-  image: "/images/case-study-solution.png"
+  image: "/automark/images/case-study-solution.png"
   title: "Solution"
   content: "We implemented appointment automation and reactivation campaigns."
   items:

@@ -5,21 +5,21 @@ description: "Lead product strategy, collaborate with engineering, and shape the
 image: ""
 type: "Full time"
 location: "California"
-banner_image: "/images/careers/career-details-banner.png"
+banner_image: "/automark/images/careers/career-details-banner.png"
 draft: false
 job_info:
   - label: "Department"
     value: "Marketing"
-    icon: "/images/icons/careerdevelopment.svg"
+    icon: "/automark/images/icons/careerdevelopment.svg"
   - label: "Location"
     value: "California"
-    icon: "/images/icons/paidtimeoff.svg"
+    icon: "/automark/images/icons/paidtimeoff.svg"
   - label: "Type"
     value: "Full Time"
-    icon: "/images/icons/wellbeing.svg"
+    icon: "/automark/images/icons/wellbeing.svg"
   - label: "Posted"
     value: "20 Jan 2025"
-    icon: "/images/icons/healthicon.svg"
+    icon: "/automark/images/icons/healthicon.svg"
 ---
 
 ## Job Description

@@ -8,7 +8,7 @@ draft: false
 page_header:
   title: "Your System-Driven <strong>Growth Partner.</strong>"
   subtitle: "We believe local businesses shouldn't have to hire a full-time IT department just to get more customers. We built this platform to put your growth on autopilot."
-  image: "/images/about_hero.png"
+  image: "/automark/images/about_hero.png"
 
 stats:
   enable: true
@@ -27,16 +27,16 @@ our_team:
   badge: "Our Team"
   title: "Meet Our <strong>Team Of Experts</strong>"
   members:
-    - image: "/images/peoples/Profile Image.png"
+    - image: "/automark/images/peoples/Profile Image.png"
       name: "Josh Wangombe"
       role: "Co-Founder & CTO"
-    - image: "/images/peoples/Profile Image-1.png"
+    - image: "/automark/images/peoples/Profile Image-1.png"
       name: "Daniel Jenson"
       role: "Co-Founder & CEO"
-    - image: "/images/peoples/Profile Image-2.png"
+    - image: "/automark/images/peoples/Profile Image-2.png"
       name: "Toun Aalbers"
       role: "Co-Founder & CTO"
-    - image: "/images/peoples/Profile Image-3.png"
+    - image: "/automark/images/peoples/Profile Image-3.png"
       name: "Peter van Ursel"
       role: "Customer Success Director"
 
@@ -46,31 +46,31 @@ core_values:
   title: "Empowering Local Businesses to <strong>Thrive and Scale</strong>"
   subtitle: "We replace the outdated, scattered tools with one powerful platform, so you can focus on what matters most: serving your clients and customers."
   items:
-    - logo: "/images/icons/innovation.svg"
+    - logo: "/automark/images/icons/innovation.svg"
       title: "Simplicity First"
       is_starred: false
-    - logo: "/images/icons/security.svg"
+    - logo: "/automark/images/icons/security.svg"
       title: "Bank-Level Security"
       is_starred: false
-    - logo: "/images/icons/collaboration.svg"
+    - logo: "/automark/images/icons/collaboration.svg"
       title: "Local Focus"
       is_starred: false
-    - logo: "/images/icons/result-driven.svg"
+    - logo: "/automark/images/icons/result-driven.svg"
       title: "Results-Driven Tools"
       is_starred: false
-    - logo: "/images/icons/creativity.svg"
+    - logo: "/automark/images/icons/creativity.svg"
       title: "Automated Growth"
       is_starred: true
-    - logo: "/images/icons/innovation.svg"
+    - logo: "/automark/images/icons/innovation.svg"
       title: "Client-Centric"
       is_starred: false
-    - logo: "/images/icons/membership.svg"
+    - logo: "/automark/images/icons/membership.svg"
       title: "No Hidden Fees"
       is_starred: false
-    - logo: "/images/icons/starred-folder.svg"
+    - logo: "/automark/images/icons/starred-folder.svg"
       title: "Reliable Support"
       is_starred: false
-    - logo: "/images/features-menu-icon.svg"
+    - logo: "/automark/images/features-menu-icon.svg"
       title: "Continuous Updates"
       is_starred: false
 ---

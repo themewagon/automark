@@ -38,7 +38,7 @@ const relatedPosts = allPosts.filter((p) => p.id !== post.id).slice(0, 3);
 
         <div class="overflow-hidden rounded-2xl border border-white/10">
           <ImageMod
-            src={postData.image ?? "/images/blog/featured-cover.png"}
+            src={postData.image ?? "/automark/images/blog/featured-cover.png"}
             alt={postData.title}
             width={1200}
             height={600}
@@ -51,7 +51,7 @@ const relatedPosts = allPosts.filter((p) => p.id !== post.id).slice(0, 3);
         >
           <span class="inline-flex items-center gap-2">
             <ImageMod
-              src={postData.author_image ?? "/images/blog/author-1.png"}
+              src={postData.author_image ?? "/automark/images/blog/author-1.png"}
               width={24}
               height={24}
               class="size-6 rounded-full"
@@ -130,12 +130,12 @@ const relatedPosts = allPosts.filter((p) => p.id !== post.id).slice(0, 3);
           <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {relatedPosts.map((relPost) => (
               <BlogCard
-                image={relPost.data.image ?? "/images/blog/post-1.png"}
+                image={relPost.data.image ?? "/automark/images/blog/post-1.png"}
                 imageAlt={relPost.data.title}
                 title={relPost.data.title}
                 description={relPost.data.description ?? ""}
                 authorImage={
-                  relPost.data.author_image ?? "/images/blog/author-1.png"
+                  relPost.data.author_image ?? "/automark/images/blog/author-1.png"
                 }
                 authorName={relPost.data.author}
                 date={dateFormat(relPost.data.date ?? new Date())}

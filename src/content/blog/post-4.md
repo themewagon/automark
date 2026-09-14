@@ -3,9 +3,9 @@ title: "Automated Review Generation: Your Biggest Local Advantage"
 meta_title: "Automated Review Generation - Blog"
 description: "Learn how asking for reviews on autopilot can double your local Google visibility."
 date: 2025-01-20T05:00:00Z
-image: "/images/blog/post-4.png"
+image: "/automark/images/blog/post-4.png"
 author: "Savannah Nguyen"
-author_image: "/images/blog/author-5.png"
+author_image: "/automark/images/blog/author-5.png"
 tag: "Personalization"
 read_time: "5 min read"
 categories: ["Marketing"]

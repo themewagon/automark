@@ -3,9 +3,9 @@ title: "From Leads to Appointments: Building Smarter Local Funnels"
 meta_title: "Building Smarter Local Funnels - Blog"
 description: "Discover how automated follow-up funnels adapt to your leads in real time, booking more appointments."
 date: 2025-01-20T05:00:00Z
-image: "/images/blog/post-2.png"
+image: "/automark/images/blog/post-2.png"
 author: "Theresa Webb"
-author_image: "/images/blog/author-3.png"
+author_image: "/automark/images/blog/author-3.png"
 tag: "Funnels"
 read_time: "4 min read"
 categories: ["Sales"]

@@ -16,7 +16,7 @@ const isGitHubPages = process.env.GITHUB_PAGES === "true";
 const site = isGitHubPages
   ? "https://themewagon.github.io"
   : config.site.base_url || "http://examplesite.com";
-const base = isGitHubPages ? "/automark" : config.site.base_path || "/automark";
+const base = isGitHubPages ? "/automark" : config.site.base_path || "/";
 
 // Helper to parse font string format: "FontName:wght@400;500;600;700"
 function parseFontString(fontStr) {

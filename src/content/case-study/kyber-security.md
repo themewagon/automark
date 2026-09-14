@@ -5,11 +5,11 @@ description: "How Kyber Home Services transformed their local lead generation an
 date: 2024-01-20
 draft: false
 
-image: "/images/case-study-hero.png"
-thumbnail: "/images/case-study-hero.png"
+image: "/automark/images/case-study-hero.png"
+thumbnail: "/automark/images/case-study-hero.png"
 
 badge: "Local Services"
-logo: "/images/brands/pingdom-logo-svg-150px.svg"
+logo: "/automark/images/brands/pingdom-logo-svg-150px.svg"
 company: "Kyber Services"
 
 stats:
@@ -19,21 +19,21 @@ stats:
     label: "Reduction in manual calls"
 
 client_info:
-  - icon: "/images/icons/careerdevelopment.svg"
+  - icon: "/automark/images/icons/careerdevelopment.svg"
     label: "Client"
     value: "Kyber Home Services"
-  - icon: "/images/icons/healthicon.svg"
+  - icon: "/automark/images/icons/healthicon.svg"
     label: "Industry"
     value: "Home Repair"
-  - icon: "/images/icons/paidtimeoff.svg"
+  - icon: "/automark/images/icons/paidtimeoff.svg"
     label: "Service"
     value: "Lead Automation"
-  - icon: "/images/icons/wellbeing.svg"
+  - icon: "/automark/images/icons/wellbeing.svg"
     label: "Date"
     value: "20 Jan 2024"
 
 overview:
-  image: "/images/case-study-overview.png"
+  image: "/automark/images/case-study-overview.png"
   title: "Overview"
   content: |
     Kyber Home Services is a local contracting business that was losing potential jobs due to missed calls while on the field.
@@ -52,10 +52,10 @@ challenges:
   quote_author:
     name: "Sarah Mitchell"
     designation: "Owner"
-    avatar: "/images/avatar.png"
+    avatar: "/automark/images/avatar.png"
 
 solution:
-  image: "/images/case-study-solution.png"
+  image: "/automark/images/case-study-solution.png"
   title: "Solution"
   content: "By implementing the Missed Call Auto-Responder and Unified Inbox, we transformed how they handled incoming leads."
   items:
