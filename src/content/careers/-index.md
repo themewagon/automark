@@ -11,16 +11,16 @@ page_header:
 gallery:
   enable: true
   items:
-    - src: "/automark/images/careers/office-1.png"
+    - src: "/images/careers/office-1.png"
       alt: "Modern office workspace"
       class: "row-span-2 h-[625px]"
-    - src: "/automark/images/careers/office-2.png"
+    - src: "/images/careers/office-2.png"
       alt: "Office meeting area"
       class: "h-[296px]"
-    - src: "/automark/images/careers/office-3.png"
+    - src: "/images/careers/office-3.png"
       alt: "Colorful office lounge"
       class: "row-span-2 h-[625px]"
-    - src: "/automark/images/careers/office-4.png"
+    - src: "/images/careers/office-4.png"
       alt: "Bright office space"
       class: "h-[298px]"
 
@@ -29,25 +29,25 @@ what_we_offer:
   title: "What We Offer"
   subtitle: "Automark's intuitive platform makes it easy for team members to organize, prioritize and solve customer requests — all in a familiar interface."
   offers:
-    - logo: "/automark/images/icons/healthicon.svg"
+    - logo: "/images/icons/healthicon.svg"
       title: "Health & Wellness"
       list:
         - "Comprehensive health insurance"
         - "Mental health support"
         - "Wellness programs"
-    - logo: "/automark/images/icons/paidtimeoff.svg"
+    - logo: "/images/icons/paidtimeoff.svg"
       title: "Paid Time Off"
       list:
         - "Generous vacation policy"
         - "Sick leave"
         - "Parental leave"
-    - logo: "/automark/images/icons/wellbeing.svg"
+    - logo: "/images/icons/wellbeing.svg"
       title: "Financial Well-being"
       list:
         - "Competitive salaries"
         - "Retirement plans"
         - "Financial planning resources"
-    - logo: "/automark/images/icons/careerdevelopment.svg"
+    - logo: "/images/icons/careerdevelopment.svg"
       title: "Career Development"
       list:
         - "Professional development budget"
@@ -59,11 +59,11 @@ staff_testimonials:
   title: What Our Staff Say
   items:
     - quote: "They truly understood our business at a depth, offering data-driven updates on time, we designed and managed a project to drive value, including time, and integrate productively. It offers the full gamut"
-      avatar: "/automark/images/avatar.png"
+      avatar: "/images/avatar.png"
       name: "Sarah Mitchell"
       designation: "Marketing Director"
     - quote: "They truly understood our business at a depth, offering data-driven updates on time, we designed and managed a project to drive value, including time, and integrate productively. It offers the full gamut"
-      avatar: "/automark/images/avatar.png"
+      avatar: "/images/avatar.png"
       name: "James Carter"
       designation: "Product Lead"
 

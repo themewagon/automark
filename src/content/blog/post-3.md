@@ -3,9 +3,9 @@ title: "Why Traditional Spreadsheets Are Failing Local Businesses"
 meta_title: "Why Spreadsheets Are Failing Local Businesses - Blog"
 description: "This article breaks down why disorganized customer tracking fails and how a Smart Unified Inbox helps."
 date: 2025-01-20T05:00:00Z
-image: "/automark/images/blog/post-3.png"
+image: "/images/blog/post-3.png"
 author: "Kathryn Murphy"
-author_image: "/automark/images/blog/author-4.png"
+author_image: "/images/blog/author-4.png"
 tag: "CRM"
 read_time: "6 min read"
 categories: ["Technology"]

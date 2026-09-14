@@ -58,7 +58,7 @@ const latestPosts = allPosts.filter((p) => p.id !== featuredPost.id);
             <div class="overflow-hidden rounded-2xl border border-white/10">
               <ImageMod
                 src={
-                  featuredPost.data.image ?? "/automark/images/blog/featured-cover.png"
+                  featuredPost.data.image ?? "/images/blog/featured-cover.png"
                 }
                 alt={featuredPost.data.title}
                 width={700}
@@ -71,7 +71,7 @@ const latestPosts = allPosts.filter((p) => p.id !== featuredPost.id);
               title={featuredPost.data.title}
               description={featuredPost.data.description ?? ""}
               authorImage={
-                featuredPost.data.author_image ?? "/automark/images/blog/author-1.png"
+                featuredPost.data.author_image ?? "/images/blog/author-1.png"
               }
               authorName={featuredPost.data.author}
               date={dateFormat(featuredPost.data.date ?? new Date())}
@@ -100,12 +100,12 @@ const latestPosts = allPosts.filter((p) => p.id !== featuredPost.id);
           <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {latestPosts.map((post) => (
               <BlogCard
-                image={post.data.image ?? "/automark/images/blog/post-1.png"}
+                image={post.data.image ?? "/images/blog/post-1.png"}
                 imageAlt={post.data.title}
                 title={post.data.title}
                 description={post.data.description ?? ""}
                 authorImage={
-                  post.data.author_image ?? "/automark/images/blog/author-1.png"
+                  post.data.author_image ?? "/images/blog/author-1.png"
                 }
                 authorName={post.data.author}
                 date={dateFormat(post.data.date ?? new Date())}

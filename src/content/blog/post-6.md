@@ -3,9 +3,9 @@ title: "Automating Marketing Without Losing Your Local Touch"
 meta_title: "Local Marketing Automation - Blog"
 description: "Discover how automation can handle texts and reminders while maintaining a natural, community tone."
 date: 2025-01-20T05:00:00Z
-image: "/automark/images/blog/post-6.png"
+image: "/images/blog/post-6.png"
 author: "Courtney Henry"
-author_image: "/automark/images/blog/author-7.png"
+author_image: "/images/blog/author-7.png"
 tag: "Automation"
 read_time: "4 min read"
 categories: ["Marketing"]

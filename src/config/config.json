@@ -4,8 +4,8 @@
     "base_url": "https://automark-astro.vercel.app",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/automark/images/favicon.png",
-    "logo": "/automark/images/logo.svg",
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.svg",
     "logo_width": "160",
     "logo_height": "45",
     "logo_text": "Automark"
@@ -33,7 +33,7 @@
   },
   "metadata": {
     "meta_author": "Automark",
-    "meta_image": "/automark/images/og-image.png",
+    "meta_image": "/images/og-image.png",
     "meta_description": "The all-in-one marketing and sales automation platform"
   }
 }

@@ -3,9 +3,9 @@ title: "Why You Need a Missed Call Auto-Responder Today"
 meta_title: "Missed Call Auto-Responder - Blog"
 description: "Manual workflows slow teams down. We explore how automating missed calls saves local businesses thousands."
 date: 2025-01-20T05:00:00Z
-image: "/automark/images/blog/post-1.png"
+image: "/images/blog/post-1.png"
 author: "Theresa Webb"
-author_image: "/automark/images/blog/author-2.png"
+author_image: "/images/blog/author-2.png"
 tag: "AI Marketing"
 read_time: "5 min read"
 categories: ["Marketing"]

@@ -28,25 +28,25 @@ value_props:
   title: "Replace Your Clunky Tools With A <strong>Smart, All-In-One System</strong>"
   content: "Log in to a single powerful dashboard to manage everything seamlessly."
   items:
-    - logo: "/automark/images/value-proposition/values-icon-1.svg"
+    - logo: "/images/value-proposition/values-icon-1.svg"
       title: "Automated Customer Follow-Up"
       list:
         - "Missed Call Auto-Responder"
         - "24/7 Appointment Scheduler"
         - "Instant SMS & Email Follow-Up"
-    - logo: "/automark/images/value-proposition/values-icon-2.svg"
+    - logo: "/images/value-proposition/values-icon-2.svg"
       title: "Smart Customer Database"
       list:
         - "Unified Lead Inbox"
         - "Smart Pipeline Manager"
         - "Client Notes & History"
-    - logo: "/automark/images/value-proposition/values-icon-3.svg"
+    - logo: "/images/value-proposition/values-icon-3.svg"
       title: "Autopilot Review Generator"
       list:
         - "Automated Review Requests"
         - "Google & Facebook Integration"
         - "Reputation Tracking"
-    - logo: "/automark/images/value-proposition/values-icon-4.svg"
+    - logo: "/images/value-proposition/values-icon-4.svg"
       title: "High-Converting Websites"
       list:
         - "Drag-and-Drop Landing Pages"
@@ -58,31 +58,31 @@ our_features:
   title: "Everything You Need To Put Growth On <strong>Autopilot</strong>"
   content: "From capturing the very first click to securing a 5-star review, we've got you covered."
   items:
-    - logo: "/automark/images/features-menu-icon.svg"
+    - logo: "/images/features-menu-icon.svg"
       title: "Automated Customer Follow-up"
       is_starred: false
-    - logo: "/automark/images/features-menu-icon.svg"
+    - logo: "/images/features-menu-icon.svg"
       title: "Autopilot Review Generator"
       is_starred: false
-    - logo: "/automark/images/features-menu-icon.svg"
+    - logo: "/images/features-menu-icon.svg"
       title: "Missed Call Auto-Responder"
       is_starred: false
-    - logo: "/automark/images/features-menu-icon.svg"
+    - logo: "/images/features-menu-icon.svg"
       title: "24/7 Appointment Scheduler"
       is_starred: false
-    - logo: "/automark/images/features-menu-icon.svg"
+    - logo: "/images/features-menu-icon.svg"
       title: "Unified Lead Inbox"
       is_starred: true
-    - logo: "/automark/images/features-menu-icon.svg"
+    - logo: "/images/features-menu-icon.svg"
       title: "Smart Customer Database"
       is_starred: false
-    - logo: "/automark/images/features-menu-icon.svg"
+    - logo: "/images/features-menu-icon.svg"
       title: "High-Converting Websites"
       is_starred: false
-    - logo: "/automark/images/features-menu-icon.svg"
+    - logo: "/images/features-menu-icon.svg"
       title: "Drag & Drop Forms"
       is_starred: false
-    - logo: "/automark/images/features-menu-icon.svg"
+    - logo: "/images/features-menu-icon.svg"
       title: "Automated Text Campaigns"
       is_starred: false
 
@@ -102,7 +102,7 @@ single_testimonial:
       label: "Hours Saved"
   testimonial:
     quote: "This all-in-one software is exactly what our local business needed. It completely eliminated our need for 4 other separate platforms and organized our entire customer pipeline."
-    avatar: "/automark/images/avatar.png"
+    avatar: "/images/avatar.png"
     name: "Ronald Richards"
     company: "Local Services Co."
 
@@ -110,13 +110,13 @@ growth_process:
   enable: true
   title: 'Your 3-Step Path to <strong class="italic">Automated Growth</strong>'
   items:
-    - logo: "/automark/images/value-proposition/values-icon-2.svg"
+    - logo: "/images/value-proposition/values-icon-2.svg"
       title: "1. Start Your Trial"
       content: "Sign up for a free trial and experience the power of the platform for yourself. No credit card required."
-    - logo: "/automark/images/value-proposition/values-icon-2.svg"
+    - logo: "/images/value-proposition/values-icon-2.svg"
       title: "2. Connect Your Business"
       content: "Forward your calls, plug in your social accounts, and unify your inbox in a matter of clicks."
-    - logo: "/automark/images/value-proposition/values-icon-2.svg"
+    - logo: "/images/value-proposition/values-icon-2.svg"
       title: "3. Scale on Autopilot"
       content: "Watch your calendar fill up and reviews come in automatically, so you can focus on serving your customers."
   button:
@@ -128,21 +128,21 @@ integrations:
   enable: true
   title: "Connect all your <strong>Applications</strong>"
   items:
-    - image: "/automark/images/integrations/snapchat.png"
+    - image: "/images/integrations/snapchat.png"
       alt: "snapchat"
-    - image: "/automark/images/integrations/fastapi.png"
+    - image: "/images/integrations/fastapi.png"
       alt: "fastapi"
-    - image: "/automark/images/integrations/youtube.png"
+    - image: "/images/integrations/youtube.png"
       alt: "youtube"
-    - image: "/automark/images/integrations/airtable.png"
+    - image: "/images/integrations/airtable.png"
       alt: "airtable"
-    - image: "/automark/images/integrations/zendesk.png"
+    - image: "/images/integrations/zendesk.png"
       alt: "zendesk"
-    - image: "/automark/images/integrations/slack.png"
+    - image: "/images/integrations/slack.png"
       alt: "slack"
-    - image: "/automark/images/integrations/mailchimp.png"
+    - image: "/images/integrations/mailchimp.png"
       alt: "mailchimp"
-    - image: "/automark/images/integrations/asana.png"
+    - image: "/images/integrations/asana.png"
       alt: "asana"
 
 lead_generation:
@@ -157,7 +157,7 @@ lead_generation:
     - "<strong>The Follow-Up Audit:</strong> A step-by-step guide to measuring your lead response time."
     - "<strong>Automation Quick-Wins:</strong> 3 workflows you can set up today to start booking more local appointments."
     - "<strong>The Tech Stack Check:</strong> Stop paying for 5 different software tools."
-  image: "/automark/images/ebook.png"
+  image: "/images/ebook.png"
   button:
     enable: true
     label: "Get Free Checklist"

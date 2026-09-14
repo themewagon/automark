@@ -5,21 +5,21 @@ description: "Build and maintain responsive web applications using modern framew
 image: ""
 type: "Full time"
 location: "New York"
-banner_image: "/automark/images/careers/career-details-banner.png"
+banner_image: "/images/careers/career-details-banner.png"
 draft: false
 job_info:
   - label: "Department"
     value: "Marketing"
-    icon: "/automark/images/icons/careerdevelopment.svg"
+    icon: "/images/icons/careerdevelopment.svg"
   - label: "Location"
     value: "California"
-    icon: "/automark/images/icons/paidtimeoff.svg"
+    icon: "/images/icons/paidtimeoff.svg"
   - label: "Type"
     value: "Full Time"
-    icon: "/automark/images/icons/wellbeing.svg"
+    icon: "/images/icons/wellbeing.svg"
   - label: "Posted"
     value: "20 Jan 2025"
-    icon: "/automark/images/icons/healthicon.svg"
+    icon: "/images/icons/healthicon.svg"
 ---
 
 ## Job Description
